@@ -3,6 +3,10 @@ This repository implements a dialog manager for the DSTC2 restaurant domain data
 
 The DM takes a sequence of past user and system utterances and predicts the next system utterance.
 
+**Data**
+
+Place the data directory in `train/lstm/src/`.
+
 **Training**
 
 The `train/lstm/train_lstm.lua` script is used for training. Adjust the hyperparameter values at the beginning of the script as necessary.
