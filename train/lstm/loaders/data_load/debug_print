@@ -1,0 +1,1937 @@
+#####################################	
+1	hello and welcome to the cambridge	
+####	
+{
+  1 : 
+    {
+      act : "hello"
+      slots : {...}
+    }
+}
+* Act 1	
+hello	
+{}
+-------------------------------------	
+Tensor : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+Acts : affirm 0   bye 0   canthear 0   confirm-domain 0   negate 0   repeat 0   reqmore 0   welcomemsg 0   canthelp 0   canthelp.missing_slot_value 0   expl-conf 0   impl-conf 0   inform 0   offer 0   request 0   select 0   ack 0   hello 1   null 0   reqalts 0   restart 0   silence 0   thankyou 0   confirm 0   deny 0   canthelp.exception 0   
+Slots : area 0  food 0  name 0  pricerange 0  addr 0  phone 0  postcode 0  signature 0  count 0  
+-------------------------------------	
+#####################################	
+#####################################	
+2	moderately priced swedish food	
+####	
+{
+  1 : 
+    {
+      act : "inform"
+      slots : 
+        {
+          1 : 
+            {
+              1 : "food"
+              2 : "swedish"
+            }
+        }
+    }
+  2 : 
+    {
+      act : "inform"
+      slots : 
+        {
+          1 : 
+            {
+              1 : "pricerange"
+              2 : "moderate"
+            }
+        }
+    }
+}
+* Act 1	
+inform	
+{
+  1 : "food"
+}
+-------------------------------------	
+Tensor : 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 
+Acts : affirm 0   bye 0   canthear 0   confirm-domain 0   negate 0   repeat 0   reqmore 0   welcomemsg 0   canthelp 0   canthelp.missing_slot_value 0   expl-conf 0   impl-conf 0   inform 1   offer 0   request 0   select 0   ack 0   hello 0   null 0   reqalts 0   restart 0   silence 0   thankyou 0   confirm 0   deny 0   canthelp.exception 0   
+Slots : area 0  food 1  name 0  pricerange 0  addr 0  phone 0  postcode 0  signature 0  count 0  
+-------------------------------------	
+* Act 2	
+inform	
+{
+  1 : "pricerange"
+}
+-------------------------------------	
+Tensor : 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 
+Acts : affirm 0   bye 0   canthear 0   confirm-domain 0   negate 0   repeat 0   reqmore 0   welcomemsg 0   canthelp 0   canthelp.missing_slot_value 0   expl-conf 0   impl-conf 0   inform 1   offer 0   request 0   select 0   ack 0   hello 0   null 0   reqalts 0   restart 0   silence 0   thankyou 0   confirm 0   deny 0   canthelp.exception 0   
+Slots : area 0  food 0  name 0  pricerange 1  addr 0  phone 0  postcode 0  signature 0  count 0  
+-------------------------------------	
+#####################################	
+#####################################	
+3	how about asian oriental	
+####	
+{
+  1 : 
+    {
+      act : "reqalts"
+      slots : {...}
+    }
+  2 : 
+    {
+      act : "inform"
+      slots : 
+        {
+          1 : 
+            {
+              1 : "food"
+              2 : "asian oriental"
+            }
+        }
+    }
+}
+* Act 1	
+reqalts	
+{}
+-------------------------------------	
+Tensor : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+Acts : affirm 0   bye 0   canthear 0   confirm-domain 0   negate 0   repeat 0   reqmore 0   welcomemsg 0   canthelp 0   canthelp.missing_slot_value 0   expl-conf 0   impl-conf 0   inform 0   offer 0   request 0   select 0   ack 0   hello 0   null 0   reqalts 1   restart 0   silence 0   thankyou 0   confirm 0   deny 0   canthelp.exception 0   
+Slots : area 0  food 0  name 0  pricerange 0  addr 0  phone 0  postcode 0  signature 0  count 0  
+-------------------------------------	
+* Act 2	
+inform	
+{
+  1 : "food"
+}
+-------------------------------------	
+Tensor : 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 
+Acts : affirm 0   bye 0   canthear 0   confirm-domain 0   negate 0   repeat 0   reqmore 0   welcomemsg 0   canthelp 0   canthelp.missing_slot_value 0   expl-conf 0   impl-conf 0   inform 1   offer 0   request 0   select 0   ack 0   hello 0   null 0   reqalts 0   restart 0   silence 0   thankyou 0   confirm 0   deny 0   canthelp.exception 0   
+Slots : area 0  food 1  name 0  pricerange 0  addr 0  phone 0  postcode 0  signature 0  count 0  
+-------------------------------------	
+#####################################	
+#####################################	
+4	is there anything else	
+####	
+{
+  1 : 
+    {
+      act : "reqalts"
+      slots : {...}
+    }
+}
+* Act 1	
+reqalts	
+{}
+-------------------------------------	
+Tensor : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+Acts : affirm 0   bye 0   canthear 0   confirm-domain 0   negate 0   repeat 0   reqmore 0   welcomemsg 0   canthelp 0   canthelp.missing_slot_value 0   expl-conf 0   impl-conf 0   inform 0   offer 0   request 0   select 0   ack 0   hello 0   null 0   reqalts 1   restart 0   silence 0   thankyou 0   confirm 0   deny 0   canthelp.exception 0   
+Slots : area 0  food 0  name 0  pricerange 0  addr 0  phone 0  postcode 0  signature 0  count 0  
+-------------------------------------	
+#####################################	
+#####################################	
+5	could i have the address and phone number	
+####	
+{
+  1 : 
+    {
+      act : "request"
+      slots : 
+        {
+          1 : 
+            {
+              1 : "slot"
+              2 : "addr"
+            }
+        }
+    }
+  2 : 
+    {
+      act : "request"
+      slots : 
+        {
+          1 : 
+            {
+              1 : "slot"
+              2 : "phone"
+            }
+        }
+    }
+}
+* Act 1	
+request	
+{
+  1 : "addr"
+}
+-------------------------------------	
+Tensor : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 
+Acts : affirm 0   bye 0   canthear 0   confirm-domain 0   negate 0   repeat 0   reqmore 0   welcomemsg 0   canthelp 0   canthelp.missing_slot_value 0   expl-conf 0   impl-conf 0   inform 0   offer 0   request 1   select 0   ack 0   hello 0   null 0   reqalts 0   restart 0   silence 0   thankyou 0   confirm 0   deny 0   canthelp.exception 0   
+Slots : area 0  food 0  name 0  pricerange 0  addr 1  phone 0  postcode 0  signature 0  count 0  
+-------------------------------------	
+* Act 2	
+request	
+{
+  1 : "phone"
+}
+-------------------------------------	
+Tensor : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 
+Acts : affirm 0   bye 0   canthear 0   confirm-domain 0   negate 0   repeat 0   reqmore 0   welcomemsg 0   canthelp 0   canthelp.missing_slot_value 0   expl-conf 0   impl-conf 0   inform 0   offer 0   request 1   select 0   ack 0   hello 0   null 0   reqalts 0   restart 0   silence 0   thankyou 0   confirm 0   deny 0   canthelp.exception 0   
+Slots : area 0  food 0  name 0  pricerange 0  addr 0  phone 1  postcode 0  signature 0  count 0  
+-------------------------------------	
+#####################################	
+#####################################	
+6	phone number	
+####	
+{
+  1 : 
+    {
+      act : "request"
+      slots : 
+        {
+          1 : 
+            {
+              1 : "slot"
+              2 : "phone"
+            }
+        }
+    }
+}
+* Act 1	
+request	
+{
+  1 : "phone"
+}
+-------------------------------------	
+Tensor : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 
+Acts : affirm 0   bye 0   canthear 0   confirm-domain 0   negate 0   repeat 0   reqmore 0   welcomemsg 0   canthelp 0   canthelp.missing_slot_value 0   expl-conf 0   impl-conf 0   inform 0   offer 0   request 1   select 0   ack 0   hello 0   null 0   reqalts 0   restart 0   silence 0   thankyou 0   confirm 0   deny 0   canthelp.exception 0   
+Slots : area 0  food 0  name 0  pricerange 0  addr 0  phone 1  postcode 0  signature 0  count 0  
+-------------------------------------	
+#####################################	
+#####################################	
+1	hello and welcome	
+####	
+{
+  1 : 
+    {
+      act : "hello"
+      slots : {...}
+    }
+}
+* Act 1	
+hello	
+{}
+-------------------------------------	
+Tensor : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+Acts : affirm 0   bye 0   canthear 0   confirm-domain 0   negate 0   repeat 0   reqmore 0   welcomemsg 0   canthelp 0   canthelp.missing_slot_value 0   expl-conf 0   impl-conf 0   inform 0   offer 0   request 0   select 0   ack 0   hello 1   null 0   reqalts 0   restart 0   silence 0   thankyou 0   confirm 0   deny 0   canthelp.exception 0   
+Slots : area 0  food 0  name 0  pricerange 0  addr 0  phone 0  postcode 0  signature 0  count 0  
+-------------------------------------	
+#####################################	
+#####################################	
+2	center	
+####	
+{
+  1 : 
+    {
+      act : "inform"
+      slots : 
+        {
+          1 : 
+            {
+              1 : "area"
+              2 : "centre"
+            }
+        }
+    }
+}
+* Act 1	
+inform	
+{
+  1 : "area"
+}
+-------------------------------------	
+Tensor : 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 
+Acts : affirm 0   bye 0   canthear 0   confirm-domain 0   negate 0   repeat 0   reqmore 0   welcomemsg 0   canthelp 0   canthelp.missing_slot_value 0   expl-conf 0   impl-conf 0   inform 1   offer 0   request 0   select 0   ack 0   hello 0   null 0   reqalts 0   restart 0   silence 0   thankyou 0   confirm 0   deny 0   canthelp.exception 0   
+Slots : area 1  food 0  name 0  pricerange 0  addr 0  phone 0  postcode 0  signature 0  count 0  
+-------------------------------------	
+#####################################	
+#####################################	
+3	catalan	
+####	
+{
+  1 : 
+    {
+      act : "inform"
+      slots : 
+        {
+          1 : 
+            {
+              1 : "food"
+              2 : "catalan"
+            }
+        }
+    }
+}
+* Act 1	
+inform	
+{
+  1 : "food"
+}
+-------------------------------------	
+Tensor : 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 
+Acts : affirm 0   bye 0   canthear 0   confirm-domain 0   negate 0   repeat 0   reqmore 0   welcomemsg 0   canthelp 0   canthelp.missing_slot_value 0   expl-conf 0   impl-conf 0   inform 1   offer 0   request 0   select 0   ack 0   hello 0   null 0   reqalts 0   restart 0   silence 0   thankyou 0   confirm 0   deny 0   canthelp.exception 0   
+Slots : area 0  food 1  name 0  pricerange 0  addr 0  phone 0  postcode 0  signature 0  count 0  
+-------------------------------------	
+#####################################	
+#####################################	
+4	catalan	
+####	
+{
+  1 : 
+    {
+      act : "inform"
+      slots : 
+        {
+          1 : 
+            {
+              1 : "food"
+              2 : "catalan"
+            }
+        }
+    }
+}
+* Act 1	
+inform	
+{
+  1 : "food"
+}
+-------------------------------------	
+Tensor : 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 
+Acts : affirm 0   bye 0   canthear 0   confirm-domain 0   negate 0   repeat 0   reqmore 0   welcomemsg 0   canthelp 0   canthelp.missing_slot_value 0   expl-conf 0   impl-conf 0   inform 1   offer 0   request 0   select 0   ack 0   hello 0   null 0   reqalts 0   restart 0   silence 0   thankyou 0   confirm 0   deny 0   canthelp.exception 0   
+Slots : area 0  food 1  name 0  pricerange 0  addr 0  phone 0  postcode 0  signature 0  count 0  
+-------------------------------------	
+#####################################	
+#####################################	
+5	italian	
+####	
+{
+  1 : 
+    {
+      act : "inform"
+      slots : 
+        {
+          1 : 
+            {
+              1 : "food"
+              2 : "italian"
+            }
+        }
+    }
+}
+* Act 1	
+inform	
+{
+  1 : "food"
+}
+-------------------------------------	
+Tensor : 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 
+Acts : affirm 0   bye 0   canthear 0   confirm-domain 0   negate 0   repeat 0   reqmore 0   welcomemsg 0   canthelp 0   canthelp.missing_slot_value 0   expl-conf 0   impl-conf 0   inform 1   offer 0   request 0   select 0   ack 0   hello 0   null 0   reqalts 0   restart 0   silence 0   thankyou 0   confirm 0   deny 0   canthelp.exception 0   
+Slots : area 0  food 1  name 0  pricerange 0  addr 0  phone 0  postcode 0  signature 0  count 0  
+-------------------------------------	
+#####################################	
+#####################################	
+6	moderate	
+####	
+{
+  1 : 
+    {
+      act : "inform"
+      slots : 
+        {
+          1 : 
+            {
+              1 : "pricerange"
+              2 : "moderate"
+            }
+        }
+    }
+}
+* Act 1	
+inform	
+{
+  1 : "pricerange"
+}
+-------------------------------------	
+Tensor : 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 
+Acts : affirm 0   bye 0   canthear 0   confirm-domain 0   negate 0   repeat 0   reqmore 0   welcomemsg 0   canthelp 0   canthelp.missing_slot_value 0   expl-conf 0   impl-conf 0   inform 1   offer 0   request 0   select 0   ack 0   hello 0   null 0   reqalts 0   restart 0   silence 0   thankyou 0   confirm 0   deny 0   canthelp.exception 0   
+Slots : area 0  food 0  name 0  pricerange 1  addr 0  phone 0  postcode 0  signature 0  count 0  
+-------------------------------------	
+#####################################	
+#####################################	
+7	is there anything else	
+####	
+{
+  1 : 
+    {
+      act : "reqalts"
+      slots : {...}
+    }
+}
+* Act 1	
+reqalts	
+{}
+-------------------------------------	
+Tensor : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+Acts : affirm 0   bye 0   canthear 0   confirm-domain 0   negate 0   repeat 0   reqmore 0   welcomemsg 0   canthelp 0   canthelp.missing_slot_value 0   expl-conf 0   impl-conf 0   inform 0   offer 0   request 0   select 0   ack 0   hello 0   null 0   reqalts 1   restart 0   silence 0   thankyou 0   confirm 0   deny 0   canthelp.exception 0   
+Slots : area 0  food 0  name 0  pricerange 0  addr 0  phone 0  postcode 0  signature 0  count 0  
+-------------------------------------	
+#####################################	
+#####################################	
+8	could i get the phone number and	
+####	
+{
+  1 : 
+    {
+      act : "request"
+      slots : 
+        {
+          1 : 
+            {
+              1 : "slot"
+              2 : "phone"
+            }
+        }
+    }
+}
+* Act 1	
+request	
+{
+  1 : "phone"
+}
+-------------------------------------	
+Tensor : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 
+Acts : affirm 0   bye 0   canthear 0   confirm-domain 0   negate 0   repeat 0   reqmore 0   welcomemsg 0   canthelp 0   canthelp.missing_slot_value 0   expl-conf 0   impl-conf 0   inform 0   offer 0   request 1   select 0   ack 0   hello 0   null 0   reqalts 0   restart 0   silence 0   thankyou 0   confirm 0   deny 0   canthelp.exception 0   
+Slots : area 0  food 0  name 0  pricerange 0  addr 0  phone 1  postcode 0  signature 0  count 0  
+-------------------------------------	
+#####################################	
+#####################################	
+9	price range	
+####	
+{
+  1 : 
+    {
+      act : "request"
+      slots : 
+        {
+          1 : 
+            {
+              1 : "slot"
+              2 : "pricerange"
+            }
+        }
+    }
+}
+* Act 1	
+request	
+{
+  1 : "pricerange"
+}
+-------------------------------------	
+Tensor : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 
+Acts : affirm 0   bye 0   canthear 0   confirm-domain 0   negate 0   repeat 0   reqmore 0   welcomemsg 0   canthelp 0   canthelp.missing_slot_value 0   expl-conf 0   impl-conf 0   inform 0   offer 0   request 1   select 0   ack 0   hello 0   null 0   reqalts 0   restart 0   silence 0   thankyou 0   confirm 0   deny 0   canthelp.exception 0   
+Slots : area 0  food 0  name 0  pricerange 1  addr 0  phone 0  postcode 0  signature 0  count 0  
+-------------------------------------	
+#####################################	
+#####################################	
+10	could i get the phone number and price range	
+####	
+{
+  1 : 
+    {
+      act : "request"
+      slots : 
+        {
+          1 : 
+            {
+              1 : "slot"
+              2 : "phone"
+            }
+        }
+    }
+  2 : 
+    {
+      act : "request"
+      slots : 
+        {
+          1 : 
+            {
+              1 : "slot"
+              2 : "pricerange"
+            }
+        }
+    }
+}
+* Act 1	
+request	
+{
+  1 : "phone"
+}
+-------------------------------------	
+Tensor : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 
+Acts : affirm 0   bye 0   canthear 0   confirm-domain 0   negate 0   repeat 0   reqmore 0   welcomemsg 0   canthelp 0   canthelp.missing_slot_value 0   expl-conf 0   impl-conf 0   inform 0   offer 0   request 1   select 0   ack 0   hello 0   null 0   reqalts 0   restart 0   silence 0   thankyou 0   confirm 0   deny 0   canthelp.exception 0   
+Slots : area 0  food 0  name 0  pricerange 0  addr 0  phone 1  postcode 0  signature 0  count 0  
+-------------------------------------	
+* Act 2	
+request	
+{
+  1 : "pricerange"
+}
+-------------------------------------	
+Tensor : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 
+Acts : affirm 0   bye 0   canthear 0   confirm-domain 0   negate 0   repeat 0   reqmore 0   welcomemsg 0   canthelp 0   canthelp.missing_slot_value 0   expl-conf 0   impl-conf 0   inform 0   offer 0   request 1   select 0   ack 0   hello 0   null 0   reqalts 0   restart 0   silence 0   thankyou 0   confirm 0   deny 0   canthelp.exception 0   
+Slots : area 0  food 0  name 0  pricerange 1  addr 0  phone 0  postcode 0  signature 0  count 0  
+-------------------------------------	
+#####################################	
+#####################################	
+1	hello and welcome to the cambridge	
+####	
+{
+  1 : 
+    {
+      act : "hello"
+      slots : {...}
+    }
+}
+* Act 1	
+hello	
+{}
+-------------------------------------	
+Tensor : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+Acts : affirm 0   bye 0   canthear 0   confirm-domain 0   negate 0   repeat 0   reqmore 0   welcomemsg 0   canthelp 0   canthelp.missing_slot_value 0   expl-conf 0   impl-conf 0   inform 0   offer 0   request 0   select 0   ack 0   hello 1   null 0   reqalts 0   restart 0   silence 0   thankyou 0   confirm 0   deny 0   canthelp.exception 0   
+Slots : area 0  food 0  name 0  pricerange 0  addr 0  phone 0  postcode 0  signature 0  count 0  
+-------------------------------------	
+#####################################	
+#####################################	
+2	any part	
+####	
+{
+  1 : 
+    {
+      act : "inform"
+      slots : 
+        {
+          1 : 
+            {
+              1 : "area"
+              2 : "dontcare"
+            }
+        }
+    }
+}
+* Act 1	
+inform	
+{
+  1 : "area"
+}
+-------------------------------------	
+Tensor : 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 
+Acts : affirm 0   bye 0   canthear 0   confirm-domain 0   negate 0   repeat 0   reqmore 0   welcomemsg 0   canthelp 0   canthelp.missing_slot_value 0   expl-conf 0   impl-conf 0   inform 1   offer 0   request 0   select 0   ack 0   hello 0   null 0   reqalts 0   restart 0   silence 0   thankyou 0   confirm 0   deny 0   canthelp.exception 0   
+Slots : area 1  food 0  name 0  pricerange 0  addr 0  phone 0  postcode 0  signature 0  count 0  
+-------------------------------------	
+#####################################	
+#####################################	
+3	i dont care about the price range	
+####	
+{
+  1 : 
+    {
+      act : "inform"
+      slots : 
+        {
+          1 : 
+            {
+              1 : "pricerange"
+              2 : "dontcare"
+            }
+        }
+    }
+}
+* Act 1	
+inform	
+{
+  1 : "pricerange"
+}
+-------------------------------------	
+Tensor : 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 
+Acts : affirm 0   bye 0   canthear 0   confirm-domain 0   negate 0   repeat 0   reqmore 0   welcomemsg 0   canthelp 0   canthelp.missing_slot_value 0   expl-conf 0   impl-conf 0   inform 1   offer 0   request 0   select 0   ack 0   hello 0   null 0   reqalts 0   restart 0   silence 0   thankyou 0   confirm 0   deny 0   canthelp.exception 0   
+Slots : area 0  food 0  name 0  pricerange 1  addr 0  phone 0  postcode 0  signature 0  count 0  
+-------------------------------------	
+#####################################	
+#####################################	
+4	uh world food	
+####	
+{
+  1 : 
+    {
+      act : "inform"
+      slots : 
+        {
+          1 : 
+            {
+              1 : "food"
+              2 : "world"
+            }
+        }
+    }
+}
+* Act 1	
+inform	
+{
+  1 : "food"
+}
+-------------------------------------	
+Tensor : 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 
+Acts : affirm 0   bye 0   canthear 0   confirm-domain 0   negate 0   repeat 0   reqmore 0   welcomemsg 0   canthelp 0   canthelp.missing_slot_value 0   expl-conf 0   impl-conf 0   inform 1   offer 0   request 0   select 0   ack 0   hello 0   null 0   reqalts 0   restart 0   silence 0   thankyou 0   confirm 0   deny 0   canthelp.exception 0   
+Slots : area 0  food 1  name 0  pricerange 0  addr 0  phone 0  postcode 0  signature 0  count 0  
+-------------------------------------	
+#####################################	
+#####################################	
+5	how about mediterranean food	
+####	
+{
+  1 : 
+    {
+      act : "reqalts"
+      slots : {...}
+    }
+  2 : 
+    {
+      act : "inform"
+      slots : 
+        {
+          1 : 
+            {
+              1 : "food"
+              2 : "mediterranean"
+            }
+        }
+    }
+}
+* Act 1	
+reqalts	
+{}
+-------------------------------------	
+Tensor : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+Acts : affirm 0   bye 0   canthear 0   confirm-domain 0   negate 0   repeat 0   reqmore 0   welcomemsg 0   canthelp 0   canthelp.missing_slot_value 0   expl-conf 0   impl-conf 0   inform 0   offer 0   request 0   select 0   ack 0   hello 0   null 0   reqalts 1   restart 0   silence 0   thankyou 0   confirm 0   deny 0   canthelp.exception 0   
+Slots : area 0  food 0  name 0  pricerange 0  addr 0  phone 0  postcode 0  signature 0  count 0  
+-------------------------------------	
+* Act 2	
+inform	
+{
+  1 : "food"
+}
+-------------------------------------	
+Tensor : 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 
+Acts : affirm 0   bye 0   canthear 0   confirm-domain 0   negate 0   repeat 0   reqmore 0   welcomemsg 0   canthelp 0   canthelp.missing_slot_value 0   expl-conf 0   impl-conf 0   inform 1   offer 0   request 0   select 0   ack 0   hello 0   null 0   reqalts 0   restart 0   silence 0   thankyou 0   confirm 0   deny 0   canthelp.exception 0   
+Slots : area 0  food 1  name 0  pricerange 0  addr 0  phone 0  postcode 0  signature 0  count 0  
+-------------------------------------	
+#####################################	
+#####################################	
+6	mediterranean food	
+####	
+{
+  1 : 
+    {
+      act : "inform"
+      slots : 
+        {
+          1 : 
+            {
+              1 : "food"
+              2 : "mediterranean"
+            }
+        }
+    }
+}
+* Act 1	
+inform	
+{
+  1 : "food"
+}
+-------------------------------------	
+Tensor : 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 
+Acts : affirm 0   bye 0   canthear 0   confirm-domain 0   negate 0   repeat 0   reqmore 0   welcomemsg 0   canthelp 0   canthelp.missing_slot_value 0   expl-conf 0   impl-conf 0   inform 1   offer 0   request 0   select 0   ack 0   hello 0   null 0   reqalts 0   restart 0   silence 0   thankyou 0   confirm 0   deny 0   canthelp.exception 0   
+Slots : area 0  food 1  name 0  pricerange 0  addr 0  phone 0  postcode 0  signature 0  count 0  
+-------------------------------------	
+#####################################	
+#####################################	
+7	is there anything else	
+####	
+{
+  1 : 
+    {
+      act : "reqalts"
+      slots : {...}
+    }
+}
+* Act 1	
+reqalts	
+{}
+-------------------------------------	
+Tensor : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+Acts : affirm 0   bye 0   canthear 0   confirm-domain 0   negate 0   repeat 0   reqmore 0   welcomemsg 0   canthelp 0   canthelp.missing_slot_value 0   expl-conf 0   impl-conf 0   inform 0   offer 0   request 0   select 0   ack 0   hello 0   null 0   reqalts 1   restart 0   silence 0   thankyou 0   confirm 0   deny 0   canthelp.exception 0   
+Slots : area 0  food 0  name 0  pricerange 0  addr 0  phone 0  postcode 0  signature 0  count 0  
+-------------------------------------	
+#####################################	
+#####################################	
+8	could i have the address	
+####	
+{
+  1 : 
+    {
+      act : "request"
+      slots : 
+        {
+          1 : 
+            {
+              1 : "slot"
+              2 : "addr"
+            }
+        }
+    }
+}
+* Act 1	
+request	
+{
+  1 : "addr"
+}
+-------------------------------------	
+Tensor : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 
+Acts : affirm 0   bye 0   canthear 0   confirm-domain 0   negate 0   repeat 0   reqmore 0   welcomemsg 0   canthelp 0   canthelp.missing_slot_value 0   expl-conf 0   impl-conf 0   inform 0   offer 0   request 1   select 0   ack 0   hello 0   null 0   reqalts 0   restart 0   silence 0   thankyou 0   confirm 0   deny 0   canthelp.exception 0   
+Slots : area 0  food 0  name 0  pricerange 0  addr 1  phone 0  postcode 0  signature 0  count 0  
+-------------------------------------	
+#####################################	
+#####################################	
+1	noise	
+####	
+{}
+* Act 1	
+null	
+{}
+-------------------------------------	
+Tensor : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+Acts : affirm 0   bye 0   canthear 0   confirm-domain 0   negate 0   repeat 0   reqmore 0   welcomemsg 0   canthelp 0   canthelp.missing_slot_value 0   expl-conf 0   impl-conf 0   inform 0   offer 0   request 0   select 0   ack 0   hello 0   null 1   reqalts 0   restart 0   silence 0   thankyou 0   confirm 0   deny 0   canthelp.exception 0   
+Slots : area 0  food 0  name 0  pricerange 0  addr 0  phone 0  postcode 0  signature 0  count 0  
+-------------------------------------	
+#####################################	
+#####################################	
+2	west part of town	
+####	
+{
+  1 : 
+    {
+      act : "inform"
+      slots : 
+        {
+          1 : 
+            {
+              1 : "area"
+              2 : "west"
+            }
+        }
+    }
+}
+* Act 1	
+inform	
+{
+  1 : "area"
+}
+-------------------------------------	
+Tensor : 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 
+Acts : affirm 0   bye 0   canthear 0   confirm-domain 0   negate 0   repeat 0   reqmore 0   welcomemsg 0   canthelp 0   canthelp.missing_slot_value 0   expl-conf 0   impl-conf 0   inform 1   offer 0   request 0   select 0   ack 0   hello 0   null 0   reqalts 0   restart 0   silence 0   thankyou 0   confirm 0   deny 0   canthelp.exception 0   
+Slots : area 1  food 0  name 0  pricerange 0  addr 0  phone 0  postcode 0  signature 0  count 0  
+-------------------------------------	
+#####################################	
+#####################################	
+3	cheap	
+####	
+{
+  1 : 
+    {
+      act : "inform"
+      slots : 
+        {
+          1 : 
+            {
+              1 : "pricerange"
+              2 : "cheap"
+            }
+        }
+    }
+}
+* Act 1	
+inform	
+{
+  1 : "pricerange"
+}
+-------------------------------------	
+Tensor : 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 
+Acts : affirm 0   bye 0   canthear 0   confirm-domain 0   negate 0   repeat 0   reqmore 0   welcomemsg 0   canthelp 0   canthelp.missing_slot_value 0   expl-conf 0   impl-conf 0   inform 1   offer 0   request 0   select 0   ack 0   hello 0   null 0   reqalts 0   restart 0   silence 0   thankyou 0   confirm 0   deny 0   canthelp.exception 0   
+Slots : area 0  food 0  name 0  pricerange 1  addr 0  phone 0  postcode 0  signature 0  count 0  
+-------------------------------------	
+#####################################	
+#####################################	
+4	do you have another option anything else	
+####	
+{
+  1 : 
+    {
+      act : "reqalts"
+      slots : {...}
+    }
+}
+* Act 1	
+reqalts	
+{}
+-------------------------------------	
+Tensor : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+Acts : affirm 0   bye 0   canthear 0   confirm-domain 0   negate 0   repeat 0   reqmore 0   welcomemsg 0   canthelp 0   canthelp.missing_slot_value 0   expl-conf 0   impl-conf 0   inform 0   offer 0   request 0   select 0   ack 0   hello 0   null 0   reqalts 1   restart 0   silence 0   thankyou 0   confirm 0   deny 0   canthelp.exception 0   
+Slots : area 0  food 0  name 0  pricerange 0  addr 0  phone 0  postcode 0  signature 0  count 0  
+-------------------------------------	
+#####################################	
+#####################################	
+5	could have the phone number	
+####	
+{
+  1 : 
+    {
+      act : "request"
+      slots : 
+        {
+          1 : 
+            {
+              1 : "slot"
+              2 : "phone"
+            }
+        }
+    }
+}
+* Act 1	
+request	
+{
+  1 : "phone"
+}
+-------------------------------------	
+Tensor : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 
+Acts : affirm 0   bye 0   canthear 0   confirm-domain 0   negate 0   repeat 0   reqmore 0   welcomemsg 0   canthelp 0   canthelp.missing_slot_value 0   expl-conf 0   impl-conf 0   inform 0   offer 0   request 1   select 0   ack 0   hello 0   null 0   reqalts 0   restart 0   silence 0   thankyou 0   confirm 0   deny 0   canthelp.exception 0   
+Slots : area 0  food 0  name 0  pricerange 0  addr 0  phone 1  postcode 0  signature 0  count 0  
+-------------------------------------	
+#####################################	
+#####################################	
+1	hello welcome to the cambridge system	
+####	
+{}
+* Act 1	
+null	
+{}
+-------------------------------------	
+Tensor : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+Acts : affirm 0   bye 0   canthear 0   confirm-domain 0   negate 0   repeat 0   reqmore 0   welcomemsg 0   canthelp 0   canthelp.missing_slot_value 0   expl-conf 0   impl-conf 0   inform 0   offer 0   request 0   select 0   ack 0   hello 0   null 1   reqalts 0   restart 0   silence 0   thankyou 0   confirm 0   deny 0   canthelp.exception 0   
+Slots : area 0  food 0  name 0  pricerange 0  addr 0  phone 0  postcode 0  signature 0  count 0  
+-------------------------------------	
+#####################################	
+#####################################	
+2	east	
+####	
+{
+  1 : 
+    {
+      act : "inform"
+      slots : 
+        {
+          1 : 
+            {
+              1 : "area"
+              2 : "east"
+            }
+        }
+    }
+}
+* Act 1	
+inform	
+{
+  1 : "area"
+}
+-------------------------------------	
+Tensor : 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 
+Acts : affirm 0   bye 0   canthear 0   confirm-domain 0   negate 0   repeat 0   reqmore 0   welcomemsg 0   canthelp 0   canthelp.missing_slot_value 0   expl-conf 0   impl-conf 0   inform 1   offer 0   request 0   select 0   ack 0   hello 0   null 0   reqalts 0   restart 0   silence 0   thankyou 0   confirm 0   deny 0   canthelp.exception 0   
+Slots : area 1  food 0  name 0  pricerange 0  addr 0  phone 0  postcode 0  signature 0  count 0  
+-------------------------------------	
+#####################################	
+#####################################	
+3	expensive	
+####	
+{
+  1 : 
+    {
+      act : "inform"
+      slots : 
+        {
+          1 : 
+            {
+              1 : "pricerange"
+              2 : "expensive"
+            }
+        }
+    }
+}
+* Act 1	
+inform	
+{
+  1 : "pricerange"
+}
+-------------------------------------	
+Tensor : 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 
+Acts : affirm 0   bye 0   canthear 0   confirm-domain 0   negate 0   repeat 0   reqmore 0   welcomemsg 0   canthelp 0   canthelp.missing_slot_value 0   expl-conf 0   impl-conf 0   inform 1   offer 0   request 0   select 0   ack 0   hello 0   null 0   reqalts 0   restart 0   silence 0   thankyou 0   confirm 0   deny 0   canthelp.exception 0   
+Slots : area 0  food 0  name 0  pricerange 1  addr 0  phone 0  postcode 0  signature 0  count 0  
+-------------------------------------	
+#####################################	
+#####################################	
+4	any type	
+####	
+{
+  1 : 
+    {
+      act : "inform"
+      slots : 
+        {
+          1 : 
+            {
+              1 : "this"
+              2 : "dontcare"
+            }
+        }
+    }
+}
+* Act 1	
+inform	
+{
+  1 : "this"
+}
+-------------------------------------	
+Tensor : 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+Acts : affirm 0   bye 0   canthear 0   confirm-domain 0   negate 0   repeat 0   reqmore 0   welcomemsg 0   canthelp 0   canthelp.missing_slot_value 0   expl-conf 0   impl-conf 0   inform 1   offer 0   request 0   select 0   ack 0   hello 0   null 0   reqalts 0   restart 0   silence 0   thankyou 0   confirm 0   deny 0   canthelp.exception 0   
+Slots : area 0  food 0  name 0  pricerange 0  addr 0  phone 0  postcode 0  signature 0  count 0  
+-------------------------------------	
+#####################################	
+#####################################	
+5	is there anything else	
+####	
+{
+  1 : 
+    {
+      act : "reqalts"
+      slots : {...}
+    }
+}
+* Act 1	
+reqalts	
+{}
+-------------------------------------	
+Tensor : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+Acts : affirm 0   bye 0   canthear 0   confirm-domain 0   negate 0   repeat 0   reqmore 0   welcomemsg 0   canthelp 0   canthelp.missing_slot_value 0   expl-conf 0   impl-conf 0   inform 0   offer 0   request 0   select 0   ack 0   hello 0   null 0   reqalts 1   restart 0   silence 0   thankyou 0   confirm 0   deny 0   canthelp.exception 0   
+Slots : area 0  food 0  name 0  pricerange 0  addr 0  phone 0  postcode 0  signature 0  count 0  
+-------------------------------------	
+#####################################	
+#####################################	
+6	could i have their phone number and the type of food	
+####	
+{
+  1 : 
+    {
+      act : "request"
+      slots : 
+        {
+          1 : 
+            {
+              1 : "slot"
+              2 : "phone"
+            }
+        }
+    }
+  2 : 
+    {
+      act : "request"
+      slots : 
+        {
+          1 : 
+            {
+              1 : "slot"
+              2 : "food"
+            }
+        }
+    }
+}
+* Act 1	
+request	
+{
+  1 : "phone"
+}
+-------------------------------------	
+Tensor : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 
+Acts : affirm 0   bye 0   canthear 0   confirm-domain 0   negate 0   repeat 0   reqmore 0   welcomemsg 0   canthelp 0   canthelp.missing_slot_value 0   expl-conf 0   impl-conf 0   inform 0   offer 0   request 1   select 0   ack 0   hello 0   null 0   reqalts 0   restart 0   silence 0   thankyou 0   confirm 0   deny 0   canthelp.exception 0   
+Slots : area 0  food 0  name 0  pricerange 0  addr 0  phone 1  postcode 0  signature 0  count 0  
+-------------------------------------	
+* Act 2	
+request	
+{
+  1 : "food"
+}
+-------------------------------------	
+Tensor : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 
+Acts : affirm 0   bye 0   canthear 0   confirm-domain 0   negate 0   repeat 0   reqmore 0   welcomemsg 0   canthelp 0   canthelp.missing_slot_value 0   expl-conf 0   impl-conf 0   inform 0   offer 0   request 1   select 0   ack 0   hello 0   null 0   reqalts 0   restart 0   silence 0   thankyou 0   confirm 0   deny 0   canthelp.exception 0   
+Slots : area 0  food 1  name 0  pricerange 0  addr 0  phone 0  postcode 0  signature 0  count 0  
+-------------------------------------	
+#####################################	
+#####################################	
+7	type of food	
+####	
+{
+  1 : 
+    {
+      act : "request"
+      slots : 
+        {
+          1 : 
+            {
+              1 : "slot"
+              2 : "food"
+            }
+        }
+    }
+}
+* Act 1	
+request	
+{
+  1 : "food"
+}
+-------------------------------------	
+Tensor : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 
+Acts : affirm 0   bye 0   canthear 0   confirm-domain 0   negate 0   repeat 0   reqmore 0   welcomemsg 0   canthelp 0   canthelp.missing_slot_value 0   expl-conf 0   impl-conf 0   inform 0   offer 0   request 1   select 0   ack 0   hello 0   null 0   reqalts 0   restart 0   silence 0   thankyou 0   confirm 0   deny 0   canthelp.exception 0   
+Slots : area 0  food 1  name 0  pricerange 0  addr 0  phone 0  postcode 0  signature 0  count 0  
+-------------------------------------	
+#####################################	
+#####################################	
+1	system	
+####	
+{}
+* Act 1	
+null	
+{}
+-------------------------------------	
+Tensor : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+Acts : affirm 0   bye 0   canthear 0   confirm-domain 0   negate 0   repeat 0   reqmore 0   welcomemsg 0   canthelp 0   canthelp.missing_slot_value 0   expl-conf 0   impl-conf 0   inform 0   offer 0   request 0   select 0   ack 0   hello 0   null 1   reqalts 0   restart 0   silence 0   thankyou 0   confirm 0   deny 0   canthelp.exception 0   
+Slots : area 0  food 0  name 0  pricerange 0  addr 0  phone 0  postcode 0  signature 0  count 0  
+-------------------------------------	
+#####################################	
+#####################################	
+2	the center of town	
+####	
+{
+  1 : 
+    {
+      act : "inform"
+      slots : 
+        {
+          1 : 
+            {
+              1 : "area"
+              2 : "centre"
+            }
+        }
+    }
+}
+* Act 1	
+inform	
+{
+  1 : "area"
+}
+-------------------------------------	
+Tensor : 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 
+Acts : affirm 0   bye 0   canthear 0   confirm-domain 0   negate 0   repeat 0   reqmore 0   welcomemsg 0   canthelp 0   canthelp.missing_slot_value 0   expl-conf 0   impl-conf 0   inform 1   offer 0   request 0   select 0   ack 0   hello 0   null 0   reqalts 0   restart 0   silence 0   thankyou 0   confirm 0   deny 0   canthelp.exception 0   
+Slots : area 1  food 0  name 0  pricerange 0  addr 0  phone 0  postcode 0  signature 0  count 0  
+-------------------------------------	
+#####################################	
+#####################################	
+3	spanish	
+####	
+{
+  1 : 
+    {
+      act : "inform"
+      slots : 
+        {
+          1 : 
+            {
+              1 : "food"
+              2 : "spanish"
+            }
+        }
+    }
+}
+* Act 1	
+inform	
+{
+  1 : "food"
+}
+-------------------------------------	
+Tensor : 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 
+Acts : affirm 0   bye 0   canthear 0   confirm-domain 0   negate 0   repeat 0   reqmore 0   welcomemsg 0   canthelp 0   canthelp.missing_slot_value 0   expl-conf 0   impl-conf 0   inform 1   offer 0   request 0   select 0   ack 0   hello 0   null 0   reqalts 0   restart 0   silence 0   thankyou 0   confirm 0   deny 0   canthelp.exception 0   
+Slots : area 0  food 1  name 0  pricerange 0  addr 0  phone 0  postcode 0  signature 0  count 0  
+-------------------------------------	
+#####################################	
+#####################################	
+4	it doesnt matter	
+####	
+{
+  1 : 
+    {
+      act : "inform"
+      slots : 
+        {
+          1 : 
+            {
+              1 : "this"
+              2 : "dontcare"
+            }
+        }
+    }
+}
+* Act 1	
+inform	
+{
+  1 : "this"
+}
+-------------------------------------	
+Tensor : 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+Acts : affirm 0   bye 0   canthear 0   confirm-domain 0   negate 0   repeat 0   reqmore 0   welcomemsg 0   canthelp 0   canthelp.missing_slot_value 0   expl-conf 0   impl-conf 0   inform 1   offer 0   request 0   select 0   ack 0   hello 0   null 0   reqalts 0   restart 0   silence 0   thankyou 0   confirm 0   deny 0   canthelp.exception 0   
+Slots : area 0  food 0  name 0  pricerange 0  addr 0  phone 0  postcode 0  signature 0  count 0  
+-------------------------------------	
+#####################################	
+#####################################	
+5	is there anything else	
+####	
+{
+  1 : 
+    {
+      act : "reqalts"
+      slots : {...}
+    }
+}
+* Act 1	
+reqalts	
+{}
+-------------------------------------	
+Tensor : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+Acts : affirm 0   bye 0   canthear 0   confirm-domain 0   negate 0   repeat 0   reqmore 0   welcomemsg 0   canthelp 0   canthelp.missing_slot_value 0   expl-conf 0   impl-conf 0   inform 0   offer 0   request 0   select 0   ack 0   hello 0   null 0   reqalts 1   restart 0   silence 0   thankyou 0   confirm 0   deny 0   canthelp.exception 0   
+Slots : area 0  food 0  name 0  pricerange 0  addr 0  phone 0  postcode 0  signature 0  count 0  
+-------------------------------------	
+#####################################	
+#####################################	
+6	could you give the address phone number and post code	
+####	
+{
+  1 : 
+    {
+      act : "request"
+      slots : 
+        {
+          1 : 
+            {
+              1 : "slot"
+              2 : "addr"
+            }
+        }
+    }
+  2 : 
+    {
+      act : "request"
+      slots : 
+        {
+          1 : 
+            {
+              1 : "slot"
+              2 : "phone"
+            }
+        }
+    }
+  3 : 
+    {
+      act : "request"
+      slots : 
+        {
+          1 : 
+            {
+              1 : "slot"
+              2 : "postcode"
+            }
+        }
+    }
+}
+* Act 1	
+request	
+{
+  1 : "addr"
+}
+-------------------------------------	
+Tensor : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 
+Acts : affirm 0   bye 0   canthear 0   confirm-domain 0   negate 0   repeat 0   reqmore 0   welcomemsg 0   canthelp 0   canthelp.missing_slot_value 0   expl-conf 0   impl-conf 0   inform 0   offer 0   request 1   select 0   ack 0   hello 0   null 0   reqalts 0   restart 0   silence 0   thankyou 0   confirm 0   deny 0   canthelp.exception 0   
+Slots : area 0  food 0  name 0  pricerange 0  addr 1  phone 0  postcode 0  signature 0  count 0  
+-------------------------------------	
+* Act 2	
+request	
+{
+  1 : "phone"
+}
+-------------------------------------	
+Tensor : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 
+Acts : affirm 0   bye 0   canthear 0   confirm-domain 0   negate 0   repeat 0   reqmore 0   welcomemsg 0   canthelp 0   canthelp.missing_slot_value 0   expl-conf 0   impl-conf 0   inform 0   offer 0   request 1   select 0   ack 0   hello 0   null 0   reqalts 0   restart 0   silence 0   thankyou 0   confirm 0   deny 0   canthelp.exception 0   
+Slots : area 0  food 0  name 0  pricerange 0  addr 0  phone 1  postcode 0  signature 0  count 0  
+-------------------------------------	
+* Act 3	
+request	
+{
+  1 : "postcode"
+}
+-------------------------------------	
+Tensor : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 
+Acts : affirm 0   bye 0   canthear 0   confirm-domain 0   negate 0   repeat 0   reqmore 0   welcomemsg 0   canthelp 0   canthelp.missing_slot_value 0   expl-conf 0   impl-conf 0   inform 0   offer 0   request 1   select 0   ack 0   hello 0   null 0   reqalts 0   restart 0   silence 0   thankyou 0   confirm 0   deny 0   canthelp.exception 0   
+Slots : area 0  food 0  name 0  pricerange 0  addr 0  phone 0  postcode 1  signature 0  count 0  
+-------------------------------------	
+#####################################	
+#####################################	
+1	restaurant in the south part of town that serves mexican food	
+####	
+{
+  1 : 
+    {
+      act : "inform"
+      slots : 
+        {
+          1 : 
+            {
+              1 : "food"
+              2 : "mexican"
+            }
+        }
+    }
+  2 : 
+    {
+      act : "inform"
+      slots : 
+        {
+          1 : 
+            {
+              1 : "area"
+              2 : "south"
+            }
+        }
+    }
+}
+* Act 1	
+inform	
+{
+  1 : "food"
+}
+-------------------------------------	
+Tensor : 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 
+Acts : affirm 0   bye 0   canthear 0   confirm-domain 0   negate 0   repeat 0   reqmore 0   welcomemsg 0   canthelp 0   canthelp.missing_slot_value 0   expl-conf 0   impl-conf 0   inform 1   offer 0   request 0   select 0   ack 0   hello 0   null 0   reqalts 0   restart 0   silence 0   thankyou 0   confirm 0   deny 0   canthelp.exception 0   
+Slots : area 0  food 1  name 0  pricerange 0  addr 0  phone 0  postcode 0  signature 0  count 0  
+-------------------------------------	
+* Act 2	
+inform	
+{
+  1 : "area"
+}
+-------------------------------------	
+Tensor : 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 
+Acts : affirm 0   bye 0   canthear 0   confirm-domain 0   negate 0   repeat 0   reqmore 0   welcomemsg 0   canthelp 0   canthelp.missing_slot_value 0   expl-conf 0   impl-conf 0   inform 1   offer 0   request 0   select 0   ack 0   hello 0   null 0   reqalts 0   restart 0   silence 0   thankyou 0   confirm 0   deny 0   canthelp.exception 0   
+Slots : area 1  food 0  name 0  pricerange 0  addr 0  phone 0  postcode 0  signature 0  count 0  
+-------------------------------------	
+#####################################	
+#####################################	
+2	whats the address phone number and price range	
+####	
+{
+  1 : 
+    {
+      act : "request"
+      slots : 
+        {
+          1 : 
+            {
+              1 : "slot"
+              2 : "addr"
+            }
+        }
+    }
+  2 : 
+    {
+      act : "request"
+      slots : 
+        {
+          1 : 
+            {
+              1 : "slot"
+              2 : "phone"
+            }
+        }
+    }
+  3 : 
+    {
+      act : "request"
+      slots : 
+        {
+          1 : 
+            {
+              1 : "slot"
+              2 : "pricerange"
+            }
+        }
+    }
+}
+* Act 1	
+request	
+{
+  1 : "addr"
+}
+-------------------------------------	
+Tensor : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 
+Acts : affirm 0   bye 0   canthear 0   confirm-domain 0   negate 0   repeat 0   reqmore 0   welcomemsg 0   canthelp 0   canthelp.missing_slot_value 0   expl-conf 0   impl-conf 0   inform 0   offer 0   request 1   select 0   ack 0   hello 0   null 0   reqalts 0   restart 0   silence 0   thankyou 0   confirm 0   deny 0   canthelp.exception 0   
+Slots : area 0  food 0  name 0  pricerange 0  addr 1  phone 0  postcode 0  signature 0  count 0  
+-------------------------------------	
+* Act 2	
+request	
+{
+  1 : "phone"
+}
+-------------------------------------	
+Tensor : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 
+Acts : affirm 0   bye 0   canthear 0   confirm-domain 0   negate 0   repeat 0   reqmore 0   welcomemsg 0   canthelp 0   canthelp.missing_slot_value 0   expl-conf 0   impl-conf 0   inform 0   offer 0   request 1   select 0   ack 0   hello 0   null 0   reqalts 0   restart 0   silence 0   thankyou 0   confirm 0   deny 0   canthelp.exception 0   
+Slots : area 0  food 0  name 0  pricerange 0  addr 0  phone 1  postcode 0  signature 0  count 0  
+-------------------------------------	
+* Act 3	
+request	
+{
+  1 : "pricerange"
+}
+-------------------------------------	
+Tensor : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 
+Acts : affirm 0   bye 0   canthear 0   confirm-domain 0   negate 0   repeat 0   reqmore 0   welcomemsg 0   canthelp 0   canthelp.missing_slot_value 0   expl-conf 0   impl-conf 0   inform 0   offer 0   request 1   select 0   ack 0   hello 0   null 0   reqalts 0   restart 0   silence 0   thankyou 0   confirm 0   deny 0   canthelp.exception 0   
+Slots : area 0  food 0  name 0  pricerange 1  addr 0  phone 0  postcode 0  signature 0  count 0  
+-------------------------------------	
+#####################################	
+#####################################	
+3	whats the price range	
+####	
+{
+  1 : 
+    {
+      act : "request"
+      slots : 
+        {
+          1 : 
+            {
+              1 : "slot"
+              2 : "pricerange"
+            }
+        }
+    }
+}
+* Act 1	
+request	
+{
+  1 : "pricerange"
+}
+-------------------------------------	
+Tensor : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 
+Acts : affirm 0   bye 0   canthear 0   confirm-domain 0   negate 0   repeat 0   reqmore 0   welcomemsg 0   canthelp 0   canthelp.missing_slot_value 0   expl-conf 0   impl-conf 0   inform 0   offer 0   request 1   select 0   ack 0   hello 0   null 0   reqalts 0   restart 0   silence 0   thankyou 0   confirm 0   deny 0   canthelp.exception 0   
+Slots : area 0  food 0  name 0  pricerange 1  addr 0  phone 0  postcode 0  signature 0  count 0  
+-------------------------------------	
+#####################################	
+#####################################	
+4	okay thank you	
+####	
+{
+  1 : 
+    {
+      act : "thankyou"
+      slots : {...}
+    }
+}
+* Act 1	
+thankyou	
+{}
+-------------------------------------	
+Tensor : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 
+Acts : affirm 0   bye 0   canthear 0   confirm-domain 0   negate 0   repeat 0   reqmore 0   welcomemsg 0   canthelp 0   canthelp.missing_slot_value 0   expl-conf 0   impl-conf 0   inform 0   offer 0   request 0   select 0   ack 0   hello 0   null 0   reqalts 0   restart 0   silence 0   thankyou 1   confirm 0   deny 0   canthelp.exception 0   
+Slots : area 0  food 0  name 0  pricerange 0  addr 0  phone 0  postcode 0  signature 0  count 0  
+-------------------------------------	
+#####################################	
+#####################################	
+5	no	
+####	
+{
+  1 : 
+    {
+      act : "negate"
+      slots : {...}
+    }
+}
+* Act 1	
+negate	
+{}
+-------------------------------------	
+Tensor : 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+Acts : affirm 0   bye 0   canthear 0   confirm-domain 0   negate 1   repeat 0   reqmore 0   welcomemsg 0   canthelp 0   canthelp.missing_slot_value 0   expl-conf 0   impl-conf 0   inform 0   offer 0   request 0   select 0   ack 0   hello 0   null 0   reqalts 0   restart 0   silence 0   thankyou 0   confirm 0   deny 0   canthelp.exception 0   
+Slots : area 0  food 0  name 0  pricerange 0  addr 0  phone 0  postcode 0  signature 0  count 0  
+-------------------------------------	
+#####################################	
+#####################################	
+1	um im looking for a restaurant in the center part of town that serves lebanese food	
+####	
+{
+  1 : 
+    {
+      act : "inform"
+      slots : 
+        {
+          1 : 
+            {
+              1 : "food"
+              2 : "lebanese"
+            }
+        }
+    }
+  2 : 
+    {
+      act : "inform"
+      slots : 
+        {
+          1 : 
+            {
+              1 : "area"
+              2 : "centre"
+            }
+        }
+    }
+}
+* Act 1	
+inform	
+{
+  1 : "food"
+}
+-------------------------------------	
+Tensor : 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 
+Acts : affirm 0   bye 0   canthear 0   confirm-domain 0   negate 0   repeat 0   reqmore 0   welcomemsg 0   canthelp 0   canthelp.missing_slot_value 0   expl-conf 0   impl-conf 0   inform 1   offer 0   request 0   select 0   ack 0   hello 0   null 0   reqalts 0   restart 0   silence 0   thankyou 0   confirm 0   deny 0   canthelp.exception 0   
+Slots : area 0  food 1  name 0  pricerange 0  addr 0  phone 0  postcode 0  signature 0  count 0  
+-------------------------------------	
+* Act 2	
+inform	
+{
+  1 : "area"
+}
+-------------------------------------	
+Tensor : 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 
+Acts : affirm 0   bye 0   canthear 0   confirm-domain 0   negate 0   repeat 0   reqmore 0   welcomemsg 0   canthelp 0   canthelp.missing_slot_value 0   expl-conf 0   impl-conf 0   inform 1   offer 0   request 0   select 0   ack 0   hello 0   null 0   reqalts 0   restart 0   silence 0   thankyou 0   confirm 0   deny 0   canthelp.exception 0   
+Slots : area 1  food 0  name 0  pricerange 0  addr 0  phone 0  postcode 0  signature 0  count 0  
+-------------------------------------	
+#####################################	
+#####################################	
+2	whats the address and phone number	
+####	
+{
+  1 : 
+    {
+      act : "request"
+      slots : 
+        {
+          1 : 
+            {
+              1 : "slot"
+              2 : "addr"
+            }
+        }
+    }
+  2 : 
+    {
+      act : "request"
+      slots : 
+        {
+          1 : 
+            {
+              1 : "slot"
+              2 : "phone"
+            }
+        }
+    }
+}
+* Act 1	
+request	
+{
+  1 : "addr"
+}
+-------------------------------------	
+Tensor : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 
+Acts : affirm 0   bye 0   canthear 0   confirm-domain 0   negate 0   repeat 0   reqmore 0   welcomemsg 0   canthelp 0   canthelp.missing_slot_value 0   expl-conf 0   impl-conf 0   inform 0   offer 0   request 1   select 0   ack 0   hello 0   null 0   reqalts 0   restart 0   silence 0   thankyou 0   confirm 0   deny 0   canthelp.exception 0   
+Slots : area 0  food 0  name 0  pricerange 0  addr 1  phone 0  postcode 0  signature 0  count 0  
+-------------------------------------	
+* Act 2	
+request	
+{
+  1 : "phone"
+}
+-------------------------------------	
+Tensor : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 
+Acts : affirm 0   bye 0   canthear 0   confirm-domain 0   negate 0   repeat 0   reqmore 0   welcomemsg 0   canthelp 0   canthelp.missing_slot_value 0   expl-conf 0   impl-conf 0   inform 0   offer 0   request 1   select 0   ack 0   hello 0   null 0   reqalts 0   restart 0   silence 0   thankyou 0   confirm 0   deny 0   canthelp.exception 0   
+Slots : area 0  food 0  name 0  pricerange 0  addr 0  phone 1  postcode 0  signature 0  count 0  
+-------------------------------------	
+#####################################	
+#####################################	
+3	phone number	
+####	
+{
+  1 : 
+    {
+      act : "request"
+      slots : 
+        {
+          1 : 
+            {
+              1 : "slot"
+              2 : "phone"
+            }
+        }
+    }
+}
+* Act 1	
+request	
+{
+  1 : "phone"
+}
+-------------------------------------	
+Tensor : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 
+Acts : affirm 0   bye 0   canthear 0   confirm-domain 0   negate 0   repeat 0   reqmore 0   welcomemsg 0   canthelp 0   canthelp.missing_slot_value 0   expl-conf 0   impl-conf 0   inform 0   offer 0   request 1   select 0   ack 0   hello 0   null 0   reqalts 0   restart 0   silence 0   thankyou 0   confirm 0   deny 0   canthelp.exception 0   
+Slots : area 0  food 0  name 0  pricerange 0  addr 0  phone 1  postcode 0  signature 0  count 0  
+-------------------------------------	
+#####################################	
+#####################################	
+1	moderately priced restaurant in the south part of town	
+####	
+{
+  1 : 
+    {
+      act : "inform"
+      slots : 
+        {
+          1 : 
+            {
+              1 : "pricerange"
+              2 : "moderate"
+            }
+        }
+    }
+  2 : 
+    {
+      act : "inform"
+      slots : 
+        {
+          1 : 
+            {
+              1 : "area"
+              2 : "south"
+            }
+        }
+    }
+}
+* Act 1	
+inform	
+{
+  1 : "pricerange"
+}
+-------------------------------------	
+Tensor : 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 
+Acts : affirm 0   bye 0   canthear 0   confirm-domain 0   negate 0   repeat 0   reqmore 0   welcomemsg 0   canthelp 0   canthelp.missing_slot_value 0   expl-conf 0   impl-conf 0   inform 1   offer 0   request 0   select 0   ack 0   hello 0   null 0   reqalts 0   restart 0   silence 0   thankyou 0   confirm 0   deny 0   canthelp.exception 0   
+Slots : area 0  food 0  name 0  pricerange 1  addr 0  phone 0  postcode 0  signature 0  count 0  
+-------------------------------------	
+* Act 2	
+inform	
+{
+  1 : "area"
+}
+-------------------------------------	
+Tensor : 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 
+Acts : affirm 0   bye 0   canthear 0   confirm-domain 0   negate 0   repeat 0   reqmore 0   welcomemsg 0   canthelp 0   canthelp.missing_slot_value 0   expl-conf 0   impl-conf 0   inform 1   offer 0   request 0   select 0   ack 0   hello 0   null 0   reqalts 0   restart 0   silence 0   thankyou 0   confirm 0   deny 0   canthelp.exception 0   
+Slots : area 1  food 0  name 0  pricerange 0  addr 0  phone 0  postcode 0  signature 0  count 0  
+-------------------------------------	
+#####################################	
+#####################################	
+2	address and phone number	
+####	
+{
+  1 : 
+    {
+      act : "request"
+      slots : 
+        {
+          1 : 
+            {
+              1 : "slot"
+              2 : "addr"
+            }
+        }
+    }
+  2 : 
+    {
+      act : "request"
+      slots : 
+        {
+          1 : 
+            {
+              1 : "slot"
+              2 : "phone"
+            }
+        }
+    }
+}
+* Act 1	
+request	
+{
+  1 : "addr"
+}
+-------------------------------------	
+Tensor : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 
+Acts : affirm 0   bye 0   canthear 0   confirm-domain 0   negate 0   repeat 0   reqmore 0   welcomemsg 0   canthelp 0   canthelp.missing_slot_value 0   expl-conf 0   impl-conf 0   inform 0   offer 0   request 1   select 0   ack 0   hello 0   null 0   reqalts 0   restart 0   silence 0   thankyou 0   confirm 0   deny 0   canthelp.exception 0   
+Slots : area 0  food 0  name 0  pricerange 0  addr 1  phone 0  postcode 0  signature 0  count 0  
+-------------------------------------	
+* Act 2	
+request	
+{
+  1 : "phone"
+}
+-------------------------------------	
+Tensor : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 
+Acts : affirm 0   bye 0   canthear 0   confirm-domain 0   negate 0   repeat 0   reqmore 0   welcomemsg 0   canthelp 0   canthelp.missing_slot_value 0   expl-conf 0   impl-conf 0   inform 0   offer 0   request 1   select 0   ack 0   hello 0   null 0   reqalts 0   restart 0   silence 0   thankyou 0   confirm 0   deny 0   canthelp.exception 0   
+Slots : area 0  food 0  name 0  pricerange 0  addr 0  phone 1  postcode 0  signature 0  count 0  
+-------------------------------------	
+#####################################	
+#####################################	
+3	yes	
+####	
+{
+  1 : 
+    {
+      act : "affirm"
+      slots : {...}
+    }
+}
+* Act 1	
+affirm	
+{}
+-------------------------------------	
+Tensor : 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+Acts : affirm 1   bye 0   canthear 0   confirm-domain 0   negate 0   repeat 0   reqmore 0   welcomemsg 0   canthelp 0   canthelp.missing_slot_value 0   expl-conf 0   impl-conf 0   inform 0   offer 0   request 0   select 0   ack 0   hello 0   null 0   reqalts 0   restart 0   silence 0   thankyou 0   confirm 0   deny 0   canthelp.exception 0   
+Slots : area 0  food 0  name 0  pricerange 0  addr 0  phone 0  postcode 0  signature 0  count 0  
+-------------------------------------	
+#####################################	
+#####################################	
+4	address and phone number	
+####	
+{
+  1 : 
+    {
+      act : "request"
+      slots : 
+        {
+          1 : 
+            {
+              1 : "slot"
+              2 : "addr"
+            }
+        }
+    }
+  2 : 
+    {
+      act : "request"
+      slots : 
+        {
+          1 : 
+            {
+              1 : "slot"
+              2 : "phone"
+            }
+        }
+    }
+}
+* Act 1	
+request	
+{
+  1 : "addr"
+}
+-------------------------------------	
+Tensor : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 
+Acts : affirm 0   bye 0   canthear 0   confirm-domain 0   negate 0   repeat 0   reqmore 0   welcomemsg 0   canthelp 0   canthelp.missing_slot_value 0   expl-conf 0   impl-conf 0   inform 0   offer 0   request 1   select 0   ack 0   hello 0   null 0   reqalts 0   restart 0   silence 0   thankyou 0   confirm 0   deny 0   canthelp.exception 0   
+Slots : area 0  food 0  name 0  pricerange 0  addr 1  phone 0  postcode 0  signature 0  count 0  
+-------------------------------------	
+* Act 2	
+request	
+{
+  1 : "phone"
+}
+-------------------------------------	
+Tensor : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 
+Acts : affirm 0   bye 0   canthear 0   confirm-domain 0   negate 0   repeat 0   reqmore 0   welcomemsg 0   canthelp 0   canthelp.missing_slot_value 0   expl-conf 0   impl-conf 0   inform 0   offer 0   request 1   select 0   ack 0   hello 0   null 0   reqalts 0   restart 0   silence 0   thankyou 0   confirm 0   deny 0   canthelp.exception 0   
+Slots : area 0  food 0  name 0  pricerange 0  addr 0  phone 1  postcode 0  signature 0  count 0  
+-------------------------------------	
+#####################################	
+#####################################	
+1	unintelligible	
+####	
+{}
+* Act 1	
+null	
+{}
+-------------------------------------	
+Tensor : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+Acts : affirm 0   bye 0   canthear 0   confirm-domain 0   negate 0   repeat 0   reqmore 0   welcomemsg 0   canthelp 0   canthelp.missing_slot_value 0   expl-conf 0   impl-conf 0   inform 0   offer 0   request 0   select 0   ack 0   hello 0   null 1   reqalts 0   restart 0   silence 0   thankyou 0   confirm 0   deny 0   canthelp.exception 0   
+Slots : area 0  food 0  name 0  pricerange 0  addr 0  phone 0  postcode 0  signature 0  count 0  
+-------------------------------------	
+#####################################	
+#####################################	
+2	unintelligible	
+####	
+{}
+* Act 1	
+null	
+{}
+-------------------------------------	
+Tensor : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+Acts : affirm 0   bye 0   canthear 0   confirm-domain 0   negate 0   repeat 0   reqmore 0   welcomemsg 0   canthelp 0   canthelp.missing_slot_value 0   expl-conf 0   impl-conf 0   inform 0   offer 0   request 0   select 0   ack 0   hello 0   null 1   reqalts 0   restart 0   silence 0   thankyou 0   confirm 0   deny 0   canthelp.exception 0   
+Slots : area 0  food 0  name 0  pricerange 0  addr 0  phone 0  postcode 0  signature 0  count 0  
+-------------------------------------	
+#####################################	
+#####################################	
+3	doesnt matter	
+####	
+{
+  1 : 
+    {
+      act : "inform"
+      slots : 
+        {
+          1 : 
+            {
+              1 : "this"
+              2 : "dontcare"
+            }
+        }
+    }
+}
+* Act 1	
+inform	
+{
+  1 : "this"
+}
+-------------------------------------	
+Tensor : 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+Acts : affirm 0   bye 0   canthear 0   confirm-domain 0   negate 0   repeat 0   reqmore 0   welcomemsg 0   canthelp 0   canthelp.missing_slot_value 0   expl-conf 0   impl-conf 0   inform 1   offer 0   request 0   select 0   ack 0   hello 0   null 0   reqalts 0   restart 0   silence 0   thankyou 0   confirm 0   deny 0   canthelp.exception 0   
+Slots : area 0  food 0  name 0  pricerange 0  addr 0  phone 0  postcode 0  signature 0  count 0  
+-------------------------------------	
+#####################################	
+#####################################	
+4	does not matter	
+####	
+{
+  1 : 
+    {
+      act : "inform"
+      slots : 
+        {
+          1 : 
+            {
+              1 : "this"
+              2 : "dontcare"
+            }
+        }
+    }
+}
+* Act 1	
+inform	
+{
+  1 : "this"
+}
+-------------------------------------	
+Tensor : 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+Acts : affirm 0   bye 0   canthear 0   confirm-domain 0   negate 0   repeat 0   reqmore 0   welcomemsg 0   canthelp 0   canthelp.missing_slot_value 0   expl-conf 0   impl-conf 0   inform 1   offer 0   request 0   select 0   ack 0   hello 0   null 0   reqalts 0   restart 0   silence 0   thankyou 0   confirm 0   deny 0   canthelp.exception 0   
+Slots : area 0  food 0  name 0  pricerange 0  addr 0  phone 0  postcode 0  signature 0  count 0  
+-------------------------------------	
+#####################################	
+#####################################	
+5	unintelligible	
+####	
+{}
+* Act 1	
+null	
+{}
+-------------------------------------	
+Tensor : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+Acts : affirm 0   bye 0   canthear 0   confirm-domain 0   negate 0   repeat 0   reqmore 0   welcomemsg 0   canthelp 0   canthelp.missing_slot_value 0   expl-conf 0   impl-conf 0   inform 0   offer 0   request 0   select 0   ack 0   hello 0   null 1   reqalts 0   restart 0   silence 0   thankyou 0   confirm 0   deny 0   canthelp.exception 0   
+Slots : area 0  food 0  name 0  pricerange 0  addr 0  phone 0  postcode 0  signature 0  count 0  
+-------------------------------------	
+#####################################	
+#####################################	
+6	unintelligible	
+####	
+{}
+* Act 1	
+null	
+{}
+-------------------------------------	
+Tensor : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+Acts : affirm 0   bye 0   canthear 0   confirm-domain 0   negate 0   repeat 0   reqmore 0   welcomemsg 0   canthelp 0   canthelp.missing_slot_value 0   expl-conf 0   impl-conf 0   inform 0   offer 0   request 0   select 0   ack 0   hello 0   null 1   reqalts 0   restart 0   silence 0   thankyou 0   confirm 0   deny 0   canthelp.exception 0   
+Slots : area 0  food 0  name 0  pricerange 0  addr 0  phone 0  postcode 0  signature 0  count 0  
+-------------------------------------	
+#####################################	
+#####################################	
+7	unintelligible	
+####	
+{}
+* Act 1	
+null	
+{}
+-------------------------------------	
+Tensor : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+Acts : affirm 0   bye 0   canthear 0   confirm-domain 0   negate 0   repeat 0   reqmore 0   welcomemsg 0   canthelp 0   canthelp.missing_slot_value 0   expl-conf 0   impl-conf 0   inform 0   offer 0   request 0   select 0   ack 0   hello 0   null 1   reqalts 0   restart 0   silence 0   thankyou 0   confirm 0   deny 0   canthelp.exception 0   
+Slots : area 0  food 0  name 0  pricerange 0  addr 0  phone 0  postcode 0  signature 0  count 0  
+-------------------------------------	
+#####################################	
+#####################################	
+8	unintelligible	
+####	
+{}
+* Act 1	
+null	
+{}
+-------------------------------------	
+Tensor : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+Acts : affirm 0   bye 0   canthear 0   confirm-domain 0   negate 0   repeat 0   reqmore 0   welcomemsg 0   canthelp 0   canthelp.missing_slot_value 0   expl-conf 0   impl-conf 0   inform 0   offer 0   request 0   select 0   ack 0   hello 0   null 1   reqalts 0   restart 0   silence 0   thankyou 0   confirm 0   deny 0   canthelp.exception 0   
+Slots : area 0  food 0  name 0  pricerange 0  addr 0  phone 0  postcode 0  signature 0  count 0  
+-------------------------------------	
+#####################################	
+#####################################	
+9	i dont care	
+####	
+{
+  1 : 
+    {
+      act : "inform"
+      slots : 
+        {
+          1 : 
+            {
+              1 : "this"
+              2 : "dontcare"
+            }
+        }
+    }
+}
+* Act 1	
+inform	
+{
+  1 : "this"
+}
+-------------------------------------	
+Tensor : 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+Acts : affirm 0   bye 0   canthear 0   confirm-domain 0   negate 0   repeat 0   reqmore 0   welcomemsg 0   canthelp 0   canthelp.missing_slot_value 0   expl-conf 0   impl-conf 0   inform 1   offer 0   request 0   select 0   ack 0   hello 0   null 0   reqalts 0   restart 0   silence 0   thankyou 0   confirm 0   deny 0   canthelp.exception 0   
+Slots : area 0  food 0  name 0  pricerange 0  addr 0  phone 0  postcode 0  signature 0  count 0  
+-------------------------------------	
+#####################################	
+#####################################	
+10	brazilian	
+####	
+{
+  1 : 
+    {
+      act : "inform"
+      slots : 
+        {
+          1 : 
+            {
+              1 : "food"
+              2 : "brazilian"
+            }
+        }
+    }
+}
+* Act 1	
+inform	
+{
+  1 : "food"
+}
+-------------------------------------	
+Tensor : 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 
+Acts : affirm 0   bye 0   canthear 0   confirm-domain 0   negate 0   repeat 0   reqmore 0   welcomemsg 0   canthelp 0   canthelp.missing_slot_value 0   expl-conf 0   impl-conf 0   inform 1   offer 0   request 0   select 0   ack 0   hello 0   null 0   reqalts 0   restart 0   silence 0   thankyou 0   confirm 0   deny 0   canthelp.exception 0   
+Slots : area 0  food 1  name 0  pricerange 0  addr 0  phone 0  postcode 0  signature 0  count 0  
+-------------------------------------	
+#####################################	
+#####################################	
+11	gastro pub	
+####	
+{}
+* Act 1	
+null	
+{}
+-------------------------------------	
+Tensor : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+Acts : affirm 0   bye 0   canthear 0   confirm-domain 0   negate 0   repeat 0   reqmore 0   welcomemsg 0   canthelp 0   canthelp.missing_slot_value 0   expl-conf 0   impl-conf 0   inform 0   offer 0   request 0   select 0   ack 0   hello 0   null 1   reqalts 0   restart 0   silence 0   thankyou 0   confirm 0   deny 0   canthelp.exception 0   
+Slots : area 0  food 0  name 0  pricerange 0  addr 0  phone 0  postcode 0  signature 0  count 0  
+-------------------------------------	
+#####################################	
+#####################################	
+12	how about moderately priced	
+####	
+{
+  1 : 
+    {
+      act : "reqalts"
+      slots : {...}
+    }
+  2 : 
+    {
+      act : "inform"
+      slots : 
+        {
+          1 : 
+            {
+              1 : "pricerange"
+              2 : "moderate"
+            }
+        }
+    }
+}
+* Act 1	
+reqalts	
+{}
+-------------------------------------	
+Tensor : 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+Acts : affirm 0   bye 0   canthear 0   confirm-domain 0   negate 0   repeat 0   reqmore 0   welcomemsg 0   canthelp 0   canthelp.missing_slot_value 0   expl-conf 0   impl-conf 0   inform 0   offer 0   request 0   select 0   ack 0   hello 0   null 0   reqalts 1   restart 0   silence 0   thankyou 0   confirm 0   deny 0   canthelp.exception 0   
+Slots : area 0  food 0  name 0  pricerange 0  addr 0  phone 0  postcode 0  signature 0  count 0  
+-------------------------------------	
+* Act 2	
+inform	
+{
+  1 : "pricerange"
+}
+-------------------------------------	
+Tensor : 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 
+Acts : affirm 0   bye 0   canthear 0   confirm-domain 0   negate 0   repeat 0   reqmore 0   welcomemsg 0   canthelp 0   canthelp.missing_slot_value 0   expl-conf 0   impl-conf 0   inform 1   offer 0   request 0   select 0   ack 0   hello 0   null 0   reqalts 0   restart 0   silence 0   thankyou 0   confirm 0   deny 0   canthelp.exception 0   
+Slots : area 0  food 0  name 0  pricerange 1  addr 0  phone 0  postcode 0  signature 0  count 0  
+-------------------------------------	
+#####################################	

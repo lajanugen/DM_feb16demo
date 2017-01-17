@@ -1,0 +1,97 @@
+{
+  "turns": [ {
+    "dm-out": {
+      "dasv": []
+    },
+    "nlu-out": {
+      "dasv": [ {
+        "dialog-act": "hello"
+      } ],
+      "text": "hello"
+    }
+  }, {
+    "dm-out": {
+      "dasv": []
+    },
+    "nlu-out": {
+      "dasv": [ {
+        "dialog-act": "inform",
+        "slot": "food",
+        "value": "indian"
+      } ],
+      "text": "I am looking for a restaurant serving indian food"
+    }
+  }, {
+    "dm-out": {
+      "dasv": []
+    },
+    "nlu-out": {
+      "dasv": [ {
+        "dialog-act": "inform",
+        "slot": "food",
+        "value": "indian"
+      } ],
+      "text": "I am looking for a restaurant serving indian food"
+    }
+  }, {
+    "dm-out": {
+      "dasv": [ {
+        "dialog-act": "inform",
+        "slot": "food",
+        "value": "indian"
+      }, {
+        "dialog-act": "offer",
+        "slot": "name",
+        "value": ""
+      } ]
+    },
+    "nlu-out": {
+      "dasv": [ {
+        "dialog-act": "request",
+        "slot": "phone",
+        "value": ""
+      } ],
+      "text": "I would like some Italian food please"
+    }
+  }, {
+    "dm-out": {
+      "dasv": [ {
+        "dialog-act": "inform",
+        "slot": "phone",
+        "value": ""
+      }, {
+        "dialog-act": "offer",
+        "slot": "name",
+        "value": ""
+      } ]
+    },
+    "nlu-out": {
+      "dasv": [ {
+        "dialog-act": "request",
+        "slot": "phone",
+        "value": ""
+      } ],
+      "text": "I would like some Italian food please"
+    }
+  }, {
+    "dm-out": {
+      "dasv": [ {
+        "dialog-act": "inform",
+        "slot": "phone",
+        "value": ""
+      }, {
+        "dialog-act": "offer",
+        "slot": "name",
+        "value": ""
+      } ]
+    },
+    "nlu-out": {
+      "dasv": [ {
+        "dialog-act": "request",
+        "slot": "phone",
+        "value": ""
+      } ],
+      "text": "I would like some Italian food please"
+    }
+  } ]
+}

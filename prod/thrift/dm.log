@@ -1,0 +1,7 @@
+Starting the server
+Starting the server
+ping()
+Received a new query: {"text": "I would like some Italian food please", "dasv": [{"slot": "phone", "dialog-act": "request", "value": ""}]}
+
+Query served: {"dasv":[{"dialog-act":"offer","slot":"name","value":""}]}	
+
