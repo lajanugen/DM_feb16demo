@@ -5,7 +5,7 @@ The DM takes a sequence of past user and system utterances and predicts the next
 
 Training
 
-The `train/lstm/train_lstm.lua1 script is used to for training. Adjust the hyperparameter values at the beginning of the script as necessary.
+The `train/lstm/train_lstm.lua1 script is used for training. Adjust the hyperparameter values at the beginning of the script as necessary.
 
 Run the script as follows
 
@@ -19,4 +19,4 @@ Parameters of the best model will be logged into a file named `res/final_*.txt`.
 
 Evaluation (demo mode)
 
-Please see `DM/prod/README.md` for instructios on evaluation.
+Please see `prod/README.md` for instructios on evaluation.
